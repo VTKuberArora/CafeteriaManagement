@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cafeteria Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#order">Order Now</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section-home">
+        <div class="container">
+            <h2>Welcome to Our Cafeteria</h2>
+            <p>Your favorite meals are just a click away. Browse our menu and place your order!</p>
+            <a href="#menu" class="button">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="section-menu">
+        <div class="container">
+            <h2>Today's Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Grilled Chicken Sandwich</h3>
+                    <p>Price: $8.99</p>
+                    <p>Delicious grilled chicken with fresh lettuce and tomatoes on whole-grain bread.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Caesar Salad</h3>
+                    <p>Price: $5.99</p>
+                    <p>Crispy romaine lettuce, parmesan cheese, and Caesar dressing.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cheeseburger</h3>
+                    <p>Price: $9.99</p>
+                    <p>Juicy beef patty with melted cheese, lettuce, and tomatoes.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Vegetarian Wrap</h3>
+                    <p>Price: $6.99</p>
+                    <p>Healthy wrap with mixed vegetables, hummus, and a hint of spice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="section-order">
+        <div class="container">
+            <h2>Order Now</h2>
+            <form class="order-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="menu-item">Select Item:</label>
+                <select id="menu-item" name="menu-item" required>
+                    <option value="grilled-chicken-sandwich">Grilled Chicken Sandwich</option>
+                    <option value="caesar-salad">Caesar Salad</option>
+                    <option value="cheeseburger">Cheeseburger</option>
+                    <option value="vegetarian-wrap">Vegetarian Wrap</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+                <button type="submit" class="button">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us!</p>
+            <p>Email: info@cafeteria.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cafeteria Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
